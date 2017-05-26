@@ -2,6 +2,7 @@ import bs4 as bs
 import urllib.request
 
 username = input('enter github username - ')
+print("wait!!! It may take sometime")
 url = "https://github.com/"+username
 sauce = urllib.request.urlopen(url).read()    
 soup = bs.BeautifulSoup(sauce,'lxml')     # lxml is a parser
