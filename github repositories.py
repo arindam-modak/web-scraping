@@ -3,6 +3,7 @@ import urllib.request
 
 username = input('enter github username - ')
 print("wait!!! It may take sometime")
+print()
 url = "https://github.com/"+username
 sauce = urllib.request.urlopen(url).read()    
 soup = bs.BeautifulSoup(sauce,'lxml')     # lxml is a parser
@@ -10,6 +11,8 @@ soup = bs.BeautifulSoup(sauce,'lxml')     # lxml is a parser
 
 repoNo = int(soup.find('span',class_='Counter').text)
 n1 = repoNo
+print("No. of repositories = ",n1)
+print()
 
 url2 = url + "?tab=repositories"
 sauce = urllib.request.urlopen(url2).read()    
