@@ -4,8 +4,8 @@
 
 ### First install python on your pc
 ### in terminal
-'''
+,,,
 pip install beautifulsoup4
 pip install requests
-'''
+,,,
 
