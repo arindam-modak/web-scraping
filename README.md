@@ -4,8 +4,15 @@
 
 ### First install python on your pc
 ### in terminal
-,,,
+```
 pip install beautifulsoup4
 pip install requests
-,,,
+```
+## Sites added
+* Github
+* Spoj
+* Codechef
+* Codeforces
+* Codebuddy
+* Hackerearth
 
