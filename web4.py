@@ -1,7 +1,7 @@
 import bs4 as bs
 import urllib.request
 
-url = input('enter - ')
+url = input('enter website url')
 sauce = urllib.request.urlopen(url).read()    #'https://pythonprogramming.net/parsememcparseface/'
 soup = bs.BeautifulSoup(sauce,'lxml')     # lxml is a parser
 
